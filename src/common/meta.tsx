@@ -1,6 +1,6 @@
 import React from "react";
-import { SEOProps } from "~/interface/meta-props";
-import { UseHead } from "~/use/use-head";
+import { SEOProps } from "../interface/meta-props";
+import { UseHead } from "../use/use-head";
 
 export const Meta = ({
 	title,

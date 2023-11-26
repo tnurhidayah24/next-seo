@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import { APP_NAME, AUTHOR, PUBLIC_URL } from "~/config/env";
+import { APP_NAME, AUTHOR, PUBLIC_URL } from "../config/env";
 import {
 	ROBOT_ARCHIVE,
 	ROBOT_FOLLOW,
@@ -17,8 +17,8 @@ import {
 	ROBOT_SNIPPET,
 	ROBOT_TRANSLATE,
 	ROBOT_VIDEO_PREVIEW,
-} from "~/config/robots";
-import { SEOProps } from "~/interface/meta-props";
+} from "../config/robots";
+import { SEOProps } from "../interface/meta-props";
 
 export const UseHead = ({
 	title,

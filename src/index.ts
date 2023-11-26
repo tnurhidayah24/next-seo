@@ -1,3 +1,3 @@
-import { Meta } from "~/common/meta";
+import { Meta } from "./common/meta";
 
 export { Meta };
