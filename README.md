@@ -76,3 +76,22 @@ const Page = () => {
 
 export default Page;
 ```
+
+### Default SEO
+
+The following are some default SEO that we can use in the Meta component.
+
+| Property     | Description                                                                                     | Default Value                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| title        | The title of the page                                                                           | NEXT_PUBLIC_APP_NAME                                                          |
+| description  | The description of the page                                                                     | NEXT_PUBLIC_APP_NAME                                                          |
+| canonical    | The canonical URL of the page                                                                   | NEXT_PUBLIC_PUBLIC_URL + router.asPath                                        |
+| openGraph    | The Open Graph data of the page                                                                 | { type: "website", locale: "en_US", url: NEXT_PUBLIC_PUBLIC_URL + router.asPath } |
+| twitterCard  | The Twitter Card data of the page                                                               | { cardType: "summary_large_image" }                                           |
+| additional   | Additional meta tags                                                                            | []                                                                            |
+| noindex      | Whether the page should be indexed by search engines                                            | false                                                                         |
+| nofollow     | Whether search engines should follow links on the page                                          | false                                                                         |
+| noarchive    | Whether search engines should show a cached copy of this page                                   | false                                                                         |
+| noimageindex | Whether search engines should index images on the page                                          | false                                                                         |
+| nosnippet    | Whether search engines should show a snippet of this page in the search results                 | false                                                                         |
+| notranslate  | Whether Google should offer to translate the page in search results                              | false                                                                         |
