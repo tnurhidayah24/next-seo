@@ -54,14 +54,14 @@ yarn add @tnurhidayah24/next-seo
 import { Meta } from "@tnurhidayah24/next-seo";
 
 const Page = () => {
- return (
-  <>
-   <Meta
-    title="Next SEO"
-    description="Next SEO is a plug in that makes it easy for us to do SEO in Next JS"
-   />
-  </>
- );
+	return (
+		<>
+			<Meta
+				title="Next SEO"
+				description="Next SEO is a plug in that makes it easy for us to do SEO in Next JS"
+			/>
+		</>
+	);
 };
 
 export default Page;
