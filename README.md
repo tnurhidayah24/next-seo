@@ -42,6 +42,27 @@ Install the package using npm or yarn
 npm install @tnurhidayah24/next-seo
 ```
 
+or
+
 ```bash
 yarn add @tnurhidayah24/next-seo
+```
+
+### Basic Usage
+
+```js
+import { Meta } from "@tnurhidayah24/next-seo";
+
+const Page = () => {
+	return (
+		<>
+			<Meta
+				title="Next SEO"
+				description="Next SEO is a plug in that makes it easy for us to do SEO in Next JS"
+			/>
+		</>
+	);
+};
+
+export default Page;
 ```
