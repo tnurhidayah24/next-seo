@@ -214,3 +214,9 @@ const Page = () => {
 
 export default Page;
 ```
+
+## Closing
+
+Thank you for using this package, actually I made this package because I needed an SEO package, and instead of making it manually on the components, it's better for me to make it a public package.
+
+Visit <a href="https://taufiksi.com">my blog website</a>, and find many wonders in it. Thank you
