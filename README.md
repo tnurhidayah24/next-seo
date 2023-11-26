@@ -89,7 +89,7 @@ The following are some default SEO that we can use in the Meta component.
 | `author`                           | string                  | `NEXT_PUBLIC_AUTHOR`            | Set the page meta author                                                                                                                                                             |
 | `canonical`                        | string                  | `NEXT_PUBLIC_PUBLIC_URL`        | Set the page canonical url                                                                                                                                                           |
 | `openGraph`                        | object                  | `true`                          | Set the page openGraph [More Info](#open-graph)                                                                                                                                      |
-| `twitter`                          | object                  | `true`                          | Set the page twitter card [More Info](#twitter-card)                                                                                                                                 |
+| `twitter`                          | object                  | `true`                          | Set the page Twitter Card [More Info](#twitter-card)                                                                                                                                 |
 | `googleSiteVerification`           | string                  | `null`                          | Set the meta verification google console webmaster                                                                                                                                   |
 | `bingSiteVerification`             | string                  | `null`                          | Set the meta verification bing console                                                                                                                                               |
 | `yandexVerification`               | string                  | `null`                          | Set the meta verification yandex                                                                                                                                                     |
@@ -115,18 +115,103 @@ Open Graph is a protocol that allows developers to control the content of their 
 | `openGraph.images.height`          | string                  | `512`                           | Set the openGraph images height of the page                                                                                                                                          |
 | `openGraph.images.type`            | string                  | `image/png`                     | Set the openGraph images type of the page                                                                                                                                            |
 
+This is how to use OpenGraph properties
+
+```js
+
+import { Meta } from "@tnurhidayah24/next-seo";
+
+const Page = () => {
+ return (
+  <>
+   <Meta
+    openGraph={{
+     title: "Next SEO",
+     description: "Next SEO is a plug in that makes it easy for us to do SEO in Next JS",
+     url: "https://example.com",
+     images: {
+      url: "https://example.com/images/next-seo.png",
+      secure_url: "https://example.com/images/next-seo.png",
+      width: "512",
+      height: "512",
+      },
+     }}
+    />
+   </>
+  );
+};
+
+export default Page;
+```
+
 ## Twitter Card
 
 Twitter Card is a protocol that allows developers to control the content of their website when shared on twitter.
 
 | Property                           | Type                    | Default                         | Description                                                                                                                                                                          |
 | ---------------------------------- | ----------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `twitter.cardType`                 | string                  | `summary_large_image`           | Set the type twitter card of the page                                                                                                                                                |
+| `twitter.cardType`                 | string                  | `summary_large_image`           | Set the type twitter card of the page,  which will be one of `summary`, `summary_large_image`, `app`, or `player`                                                                    |
 | `twitter.label1`                   | string                  | `Written by`                    | Set the twitter label written of the page `not editable`                                                                                                                             |
 | `twitter.data1`                    | string                  | `NEXT_PUBLIC_APP_NAME`          | Set the twitter title of the page                                                                                                                                                    |
 | `twitter.label2`                   | string                  | `Est. reading time`             | Set the twitter label est reading of the page `not editable`                                                                                                                         |
 | `twitter.data2`                    | string                  | `3 minutes`                     | Set the twitter est of the page                                                                                                                                                      |
 
+
+This is how to use Twitter Card properties
+
+```js
+
+import { Meta } from "@tnurhidayah24/next-seo";
+
+const Page = () => {
+ return (
+  <>
+   <Meta
+    twitter={{
+     cardType: "summary_large_image",
+     data1: "author",
+     data2: "3 minutes",
+     }}
+    />
+   </>
+  );
+};
+
+export default Page;
+```
+
 ## Robots Props
 
 | Property                           | Type                    | Default                         | Description                                                                                                                                                                          |
+| ---------------------------------- | ----------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `robots.index`                     | boolean                 | `true`                          | Set the robots index of the page                                                                                                                                                     |
+| `robots.follow`                    | boolean                 | `true`                          | Set the robots follow of the page                                                                                                                                                    |
+| `robots.image`                     | boolean                 | `true`                          | Set the robots image of the page                                                                                                                                                     |
+| `robots.archive`                   | boolean                 | `true`                          | Set the robots archive of the page                                                                                                                                                   |
+| `robots.snippet`                   | boolean                 | `true`                          | Set the robots snippet of the page                                                                                                                                                   |
+| `robots.translate`                 | boolean                 | `true`                          | Set the robots translate of the page                                                                                                                                                 |
+| `robots.imagePreview`              | string                  | `large`                         | Set the robots imagePreview of the page                                                                                                                                              |
+| `robots.videoPreview`              | string                  | `-1`                            | Set the robots videoPreview of the page                                                                                                                                              |
+| `robots.maxSnippet`                | string                  | `-1`                            | Set the robots maxSnippet of the page                                                                                                                                                |
+
+This is how to use Robots properties
+
+```js
+
+import { Meta } from "@tnurhidayah24/next-seo";
+
+const Page = () => {
+ return (
+  <>
+   <Meta
+    robots={{
+     index: false,
+     follow: false,
+     }}
+    />
+   </>
+  );
+};
+
+export default Page;
+```
