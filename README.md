@@ -50,6 +50,16 @@ yarn add @tnurhidayah24/next-seo
 
 ### Basic Usage
 
+First, we have to create an .env file which will be used to store several default variables so that SEO runs dynamically.
+
+```bash
+NEXT_PUBLIC_APP_NAME=Next SEO
+NEXT_PUBLIC_AUTHOR=author
+NEXT_PUBLIC_PUBLIC_URL=https://example.com
+```
+
+Then we create a file in the pages folder, for example, the name of the file is index.js. Then we import the Meta component from the package.
+
 ```js
 import { Meta } from "@tnurhidayah24/next-seo";
 
