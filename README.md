@@ -205,8 +205,7 @@ const Page = () => {
   <>
    <Meta
     robots={{
-     index: false,
-     follow: false,
+     index: true,
      }}
     />
    </>
