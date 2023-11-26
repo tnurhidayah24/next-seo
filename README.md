@@ -27,8 +27,7 @@ Let's try using this package
   - [Default SEO](#default-seo)
 - [Open Graph](#open-graph)
 - [Twitter Card](#twitter-card)
-- [Canonical](#canonical)
-- [Additional Meta Tags](#additional-meta-tags)
+- [Robots](#robots-props)
 
 ## Usage
 
@@ -96,3 +95,38 @@ The following are some default SEO that we can use in the Meta component.
 | `yandexVerification`               | string                  | `null`                          | Set the meta verification yandex                                                                                                                                                     |
 | `baiduSiteVerification`            | string                  | `null`                          | Set the meta verification baidu                                                                                                                                                      |
 | `pinterestSiteVerification`        | string                  | `null`                          | Set the meta verification pinterest                                                                                                                                                  |
+
+## Open Graph
+
+Open Graph is a protocol that allows developers to control the content of their website when shared on social media. Open Graph is a protocol that allows developers to control the content of their website when shared on social media.
+
+| Property                           | Type                    | Default                         | Description                                                                                                                                                                          |
+| ---------------------------------- | ----------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `openGraph.locale`                 | string                  | `en_US`                         | Set the openGraph locale of the page                                                                                                                                                 |
+| `openGraph.title`                  | string                  | `NEXT_PUBLIC_APP_NAME`          | Set the openGraph title of the page                                                                                                                                                  |
+| `openGraph.description`            | string                  | `null`                          | Set the openGraph description of the page                                                                                                                                            |
+| `openGraph.url`                    | string                  | `NEXT_PUBLIC_PUBLIC_URL`        | Set the openGraph url of the page                                                                                                                                                    |
+| `openGraph.type`                   | string                  | `website`                       | Set the openGraph type of the page                                                                                                                                                   |
+| `openGraph.site_name`              | string                  | `NEXT_PUBLIC_APP_NAME`          | Is not editable, because set default                                                                                                                                                 |
+| `openGraph.images`                 | object                  | `true`                          | Set the openGraph images of the page                                                                                                                                                 |
+| `openGraph.images.url`             | string                  | `null`                          | Set the openGraph images url of the page                                                                                                                                             |
+| `openGraph.images.secure_url`      | string                  | `null`                          | Set the openGraph images secure_url of the page                                                                                                                                      |
+| `openGraph.images.width`           | string                  | `512`                           | Set the openGraph images width of the page                                                                                                                                           |
+| `openGraph.images.height`          | string                  | `512`                           | Set the openGraph images height of the page                                                                                                                                          |
+| `openGraph.images.type`            | string                  | `image/png`                     | Set the openGraph images type of the page                                                                                                                                            |
+
+## Twitter Card
+
+Twitter Card is a protocol that allows developers to control the content of their website when shared on twitter.
+
+| Property                           | Type                    | Default                         | Description                                                                                                                                                                          |
+| ---------------------------------- | ----------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `twitter.cardType`                 | string                  | `summary_large_image`           | Set the type twitter card of the page                                                                                                                                                |
+| `twitter.label1`                   | string                  | `Written by`                    | Set the twitter label written of the page `not editable`                                                                                                                             |
+| `twitter.data1`                    | string                  | `NEXT_PUBLIC_APP_NAME`          | Set the twitter title of the page                                                                                                                                                    |
+| `twitter.label2`                   | string                  | `Est. reading time`             | Set the twitter label est reading of the page `not editable`                                                                                                                         |
+| `twitter.data2`                    | string                  | `3 minutes`                     | Set the twitter est of the page                                                                                                                                                      |
+
+## Robots Props
+
+| Property                           | Type                    | Default                         | Description                                                                                                                                                                          |

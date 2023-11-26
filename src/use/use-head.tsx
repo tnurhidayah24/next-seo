@@ -116,7 +116,7 @@ export const UseHead = ({
 			/>
 			<meta
 				name="twitter:data2"
-				content={twitter?.data2 ? twitter?.data2 : "3 min"}
+				content={twitter?.data2 ? twitter?.data2 : "3 minutes"}
 			/>
 			{googleSiteVerification && (
 				<meta
