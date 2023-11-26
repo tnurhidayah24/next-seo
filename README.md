@@ -52,7 +52,7 @@ yarn add @tnurhidayah24/next-seo
 
 First, we have to create an .env file which will be used to store several default variables so that SEO runs dynamically.
 
-```bash
+```env
 NEXT_PUBLIC_APP_NAME=Next SEO
 NEXT_PUBLIC_AUTHOR=author
 NEXT_PUBLIC_PUBLIC_URL=https://example.com
