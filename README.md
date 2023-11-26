@@ -50,7 +50,7 @@ yarn add @tnurhidayah24/next-seo
 
 ### Basic Usage
 
-First, we have to create an .env file which will be used to store several default variables so that SEO runs dynamically.
+First, we have to create an `.env` file which will be used to store several default variables so that SEO runs dynamically.
 
 ```env
 NEXT_PUBLIC_APP_NAME=Next SEO
@@ -58,7 +58,7 @@ NEXT_PUBLIC_AUTHOR=author
 NEXT_PUBLIC_PUBLIC_URL=https://example.com
 ```
 
-Then we create a file in the pages folder, for example, the name of the file is index.js. Then we import the Meta component from the package.
+Then we create a file in the pages folder, for example, the name of the file is `index.js`. Then we import the Meta component from the package.
 
 ```js
 import { Meta } from "@tnurhidayah24/next-seo";
@@ -81,17 +81,12 @@ export default Page;
 
 The following are some default SEO that we can use in the Meta component.
 
-| Property     | Description                                                                                     | Default Value                                                                 |
-| ------------ | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| title        | The title of the page                                                                           | NEXT_PUBLIC_APP_NAME                                                          |
-| description  | The description of the page                                                                     | NEXT_PUBLIC_APP_NAME                                                          |
-| canonical    | The canonical URL of the page                                                                   | NEXT_PUBLIC_PUBLIC_URL + router.asPath                                        |
-| openGraph    | The Open Graph data of the page                                                                 | { type: "website", locale: "en_US", url: NEXT_PUBLIC_PUBLIC_URL + router.asPath } |
-| twitterCard  | The Twitter Card data of the page                                                               | { cardType: "summary_large_image" }                                           |
-| additional   | Additional meta tags                                                                            | []                                                                            |
-| noindex      | Whether the page should be indexed by search engines                                            | false                                                                         |
-| nofollow     | Whether search engines should follow links on the page                                          | false                                                                         |
-| noarchive    | Whether search engines should show a cached copy of this page                                   | false                                                                         |
-| noimageindex | Whether search engines should index images on the page                                          | false                                                                         |
-| nosnippet    | Whether search engines should show a snippet of this page in the search results                 | false                                                                         |
-| notranslate  | Whether Google should offer to translate the page in search results                              | false                                                                         |
+| Property                           | Type                    | Description                                                                                                                                                                          |
+| ---------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `title`                            | string                  | Set the meta title of the page                                                                                                                                                       |
+| `robots`                           | Object                  | Set the more meta information for the `X-Robots-Tag` [More Info](#robotsprops)                                                                                                       |
+| `description`                      | string                  | Set the page meta description                                                                                                                                                        |
+| `canonical`                        | string                  | Set the page canonical url                                                                                                                                                           |
+| `twitter.cardType`                 | string                  | The card type, which will be one of `summary`, `summary_large_image`, `app`, or `player`                                                                                             |
+| `twitter.site`                     | string                  | @username for the website used in the card footer                                                                                                                                    |
+| `twitter.handle`                   | string                  | @username for the content creator / author (outputs as `twitter:creator`)                                                                                                            |
