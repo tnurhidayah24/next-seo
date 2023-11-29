@@ -1,6 +1,6 @@
 {
   "name": "@tnurhidayah24/next-seo",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Package For Next SEO",
   "type": "module",
   "source": "src/index.ts",
